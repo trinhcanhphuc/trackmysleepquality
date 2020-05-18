@@ -55,7 +55,7 @@
             android:layout_marginStart="@dimen/margin"
             android:layout_marginTop="@dimen/margin"
             android:contentDescription="@string/quality_0"
-            android:onClick="@{() -> sleepQualityViewModel.onSetSleepQuality(4)}"
+            android:onClick="@{() -> sleepQualityViewModel.onSetSleepQuality(0)}"
             app:layout_constraintEnd_toStartOf="@+id/quality_one_image"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title_text"
