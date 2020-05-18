@@ -64,7 +64,6 @@ class SleepTrackerViewModel(
     override fun onCleared() {
         super.onCleared()
         viewModelJob.cancel()
-        _showSnackbarEvent.value = true
     }
 
     init {
@@ -109,6 +108,7 @@ class SleepTrackerViewModel(
         uiScope.launch {
             clear()
             tonight.value = null
+            _showSnackbarEvent.value = true
         }
     }
 
