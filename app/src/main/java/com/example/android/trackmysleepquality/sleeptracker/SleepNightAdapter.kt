@@ -37,7 +37,6 @@ class SleepNightAdapter(val clickListener: SleepNightListener):
     }
 }
 
-
 class SleepNightDiffCallback : DiffUtil.ItemCallback<SleepNight>() {
 
     override fun areItemsTheSame(oldItem: SleepNight, newItem: SleepNight): Boolean {
@@ -48,7 +47,6 @@ class SleepNightDiffCallback : DiffUtil.ItemCallback<SleepNight>() {
         return oldItem == newItem
     }
 }
-
 
 class SleepNightListener(val clickListener: (sleepId: Long) -> Unit) {
     fun onClick(night: SleepNight) = clickListener(night.nightId)
