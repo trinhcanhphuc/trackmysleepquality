@@ -84,7 +84,7 @@ class SleepTrackerFragment : Fragment() {
             }
         })
 
-        val adapter = SleepNightAdapter(SleepNightAdapter.SleepNightListener { nightId ->
+        val adapter = SleepNightAdapter(SleepNightListener { nightId ->
             Toast.makeText(context, "${nightId}", Toast.LENGTH_LONG).show()
         })
         binding.sleepList.adapter = adapter
