@@ -7,6 +7,9 @@
         <variable
             name="sleep"
             type="com.example.android.trackmysleepquality.database.SleepNight" />
+        <variable
+            name="clickListener"
+            type="com.example.android.trackmysleepquality.sleeptracker.SleepNightAdapter.SleepNightListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
