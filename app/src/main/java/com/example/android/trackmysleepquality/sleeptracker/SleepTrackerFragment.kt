@@ -91,7 +91,7 @@ class SleepTrackerFragment : Fragment() {
                         getString(R.string.cleared_message),
                         Snackbar.LENGTH_SHORT // How long to display the message.
                 ).show()
-                sleepTrackerViewModel.doneShowingSnackbar()
+                sleepTrackerViewModel.doneShowingSnackBar()
             }
         })
         sleepTrackerViewModel.nights.observe(viewLifecycleOwner, Observer {
